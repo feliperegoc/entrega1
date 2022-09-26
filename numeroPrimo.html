@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+
+var n = parseInt(prompt("Número de casos: "));
+
+for (x = 0; x < n; x++){
+    var saiu = 0
+    var valor = parseInt(prompt("Valor: "));
+    for (y = 2;y < valor; y++){
+        if (valor % y === 0){
+            document.write("<br>")
+            document.write(valor + " Não é primo");
+            document.write("<br>")
+            saiu = 1
+            break;
+        }
+    }
+    if (saiu === 0) {
+        document.write("<br>")
+        document.write(valor + " É primo");
+        document.write("<br>")
+    }
+}
+
+
+</script>

@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+
+var n = prompt("Informe a quantidade de notas: ");
+var nota;
+var contador = 0;
+var i = 0;
+
+while (i < n) {
+    nota = prompt("Informe a nota de 1 a 10 dos " + n +" alunos");
+    if (nota >= 6){
+        contador = contador + 1;
+    }
+
+    i = i + 1;
+}
+
+document.write("Número de alunos que foram aprovados: " + contador); 
+
+
+</script>
